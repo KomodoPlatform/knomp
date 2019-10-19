@@ -1,0 +1,9 @@
+{
+"name": "COMMOD",
+"symbol": "COMMOD",
+"algorithm": "equihash",
+"txfee": 0.0001,
+"peerMagic": "a12d4d49",
+"disablecb": "false"
+}
+

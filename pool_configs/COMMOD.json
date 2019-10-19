@@ -1,0 +1,66 @@
+{
+"enabled":true,
+"coin": "COMMOD.json",
+"address": "",
+"zAddress": "",
+"tAddress": "",
+"walletInterval": 5,
+"rewardRecipients": {
+    "": 0
+},
+"paymentProcessing":{ 
+    "minConf":30,
+    "enabled":true,
+    "paymentMode":"prop",
+    "_comment_paymentMode":"prop, pplnt",
+    "paymentInterval":300,
+    "_comment_paymentInterval":"Interval in seconds to check and perform payments.",
+    "minimumPayment":25,
+    "maxBlocksPerPayment":10,
+    "daemon":{ 
+        "host":"127.0.0.1",
+        "port":27048,
+        "user":"",
+        "password":""
+    }
+},			
+"tlsOptions": { "enabled": false },
+"ports":{ 
+    "3877":{ 
+        "tls":false,
+        "diff":8196,
+        "varDiff":{ 
+            "minDiff":256,
+            "maxDiff":128256,
+            "targetTime":15,
+            "retargetTime":30,
+            "variancePercent":30
+        }
+    },
+    "3777":{ 
+        "tls":false,
+        "diff":8,
+        "varDiff":{ 
+            "minDiff":0.08,
+            "maxDiff":32695,
+            "targetTime":15,
+            "retargetTime":30,
+            "variancePercent":30
+        }
+    }
+},
+"daemons": [{
+    "host": "127.0.0.1",
+    "port": 27048,
+    "user": "",
+    "password": ""
+}],
+
+"p2p": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 32721,
+        "disableTransactions": true
+},
+"mposMode": { "enabled": false }
+}
